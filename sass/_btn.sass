@@ -1,9 +1,37 @@
 .btn
     border-radius: 8px
     cursor: pointer
-    &__promo
-        background: var(--colorB09A81)
-        color: var(--color462929)
-        padding: 17px 56px
+    transition: .5s background
+    &__large
+        background: var(--colorInput)
+        color: var(--colorText)
+        padding: 17px 29px
+        min-width: 180px
         font-size: 20px
         font-weight: 400
+        &:hover
+            background: var(--colorInputHover)
+        &:active
+            background: var(--colorInputPressed)
+    &__middle
+        background: var(--colorButton)
+        color: var(--colorInput)
+        padding: 16px 40px
+        min-width: 139px
+        font-size: 18px
+        font-weight: normal
+        &:hover
+            background: var(--colorButtonHover)
+        &:active
+            background: var(--colorButtonPressed)
+    &__small
+        background: var(--colorButton)
+        color: var(--colorInput)
+        padding: 6px 24px
+        min-width: 85px
+        font-size: 14px
+        font-weight: normal
+        &:hover
+            background: var(--colorButtonHover)
+        &:active
+            background: var(--colorInput)

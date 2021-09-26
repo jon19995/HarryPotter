@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
     createPromo(mainContent);
     root.addEventListener('click', (e) => {
         e.preventDefault();
-        if(e.target.id == 'nav-main' || e.target.id == 'header__img'){
+        if(e.target.id == 'header__img'){
             createPromo(mainContent);
-        }else if(e.target.id == 'nav-characters' || e.target.id == 'btn-start'){
+        }else if(e.target.id == 'nav-main' || e.target.id == 'nav-characters' || e.target.id == 'btn-start'){
             mainContent.innerHTML = ``;
         }
     });
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 Вы сможете узнать тип героев, их<br> 
                 способности, сильные стороны и недостатки.
                 </h2>
-                <button id="btn-start" class="btn btn__promo">Начать</button>
+                <button id="btn-start" class="btn btn__large btn__promo">Начать</button>
             </div>
             `
     };
